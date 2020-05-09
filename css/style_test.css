@@ -1,0 +1,50 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 5px;    
+}
+
+h1, p {
+    text-align: center;
+}
+
+#img_tempo img {
+    width: 100%;
+    opacity: 0.4;
+}
+
+div.slides {
+    display: flex;
+    flex-direction: row;
+    animation: slideAnim 15s ease-in-out infinite;
+}
+
+@keyframes slideAnim{
+
+    0% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(-40vh);
+    }
+
+    60% {
+        transform: translateX(-40vh);
+    }
+
+    90% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
+.text-box {
+    position: absolute;
+    z-index: 999;
+    top: 20vh;
+    left: 80vh;
+}
